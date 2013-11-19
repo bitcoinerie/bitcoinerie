@@ -8,40 +8,42 @@ import java.sql.*;
  * To change this template use File | Settings | File Templates.
  */
 public class ConnectJDBC {
-    /* Load driver JDBC for MySQL*/
-    try {
-        Class.forName("com.mysql.jdbc.Driver");
-        String url = "jdbc:mysql://localhost:8080/nombdd";
-        String user = "bit";
-        String pass = "bibit";
-
-        Connection connection = null;
+    public static void main(String[] arg) throws ClassNotFoundException, SQLException{
+        /* Load driver JDBC for MySQL*/
         try {
-            connection = DriverManager.getConnection(url,user,pass);
-            Statement statement = connection.createStatement();
+            Class.forName("com.mysql.jdbc.Driver");
+            String url = "jdbc:mysql://localhost:8080/nombdd";
+            String user = "bit";
+            String pass = "bibit";
 
-            ResultSet resultSet = statement.executeQuery(" Select From ;");
+            Connection connection = null;
+            try {
+                connection = DriverManager.getConnection(url,user,pass);
+                Statement statement = connection.createStatement();
 
-            int statut = statement.executeUpdate("Insert Into Table() Values() ;");
+                ResultSet resultSet = statement.executeQuery(" Select From ;");
 
-        }
-        catch (SQLException e){
-            e.getSQLState();
-        }
-        finally {
-            if (connection != null){
-                try{
-                    connection.close();
-                }
-                catch (SQLException ignore){
+                int statut = statement.executeUpdate("Insert Into Table() Values() ;");
+
+            }
+            catch (SQLException e){
+                e.getSQLState();
+            }
+            finally {
+                if (connection != null){
+                    try{
+                        connection.close();
+                    }
+                    catch (SQLException ignore){
+                    }
                 }
             }
         }
-    }
 
-    catch (ClassNotFoundException e) {
-        e.printStackTrace();
-        System.out.println("No Connection possible");
-    }
+        catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            System.out.println("No Connection possible");
+        }
 
+    }
 }
