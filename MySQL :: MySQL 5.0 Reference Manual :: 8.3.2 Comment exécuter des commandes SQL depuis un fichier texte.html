@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/auth016.js" type="text/javascript"></script><link media="all" href="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/widget118.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+    <!--[if IE ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+    <title>MySQL ::   MySQL 5.0 Reference Manual :: 8.3.2 Comment exécuter des commandes SQL depuis un fichier texte</title>
+
+    
+    <link rel="stylesheet" media="screen" href="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/mysql.css">
+    <link rel="stylesheet" media="projection" href="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/mysql.css">
+    <link rel="stylesheet" media="print" href="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/print.css">
+
+            <link rel="stylesheet" href="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/docs.css">
+        
+    
+    
+    
+    <link rel="contents" href="http://dev.mysql.com/doc/refman/5.0/fr/index.html" title="MySQL Manual"><link rel="start" href="http://dev.mysql.com/doc/refman/5.0/fr/index.html" title="MySQL Manual"><link rel="prev" href="http://dev.mysql.com/doc/refman/5.0/fr/mysql-commands.html" title="8.3.1 Commandes mysql"><link rel="next" href="http://dev.mysql.com/doc/refman/5.0/fr/mysql-tips.html?ff=nopfpls" title="8.3.3 Conseils avec mysql"><link rel="up" href="http://dev.mysql.com/doc/refman/5.0/fr/mysql.html" title="8.3 mysql, l'outil en ligne de commande">        <link rel="shortcut icon" href="http://dev.mysql.com/common/themes/sakila/favicon.ico">
+
+        <script src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/clear_search_text.js"></script>
+
+    
+        
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+    <!-- The following src attribute is not a typo, it is a protocol-relative URI -->
+    <script type="text/javascript" src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/addthis_widget.js"></script><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;"><iframe src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/sh142.html" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px none; left: 0px; top: 0px;" title="AddThis utility frame" id="_atssh655"></iframe></div><script src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/core109.js" type="text/javascript"></script>
+
+    
+</head>
+
+<body class="doc">
+
+<div id="container">
+
+<!--UdmComment-->
+<a class="skipToContent" href="#mainContent">Skip navigation links</a>
+
+    <div id="header">
+
+    <div class="left">
+
+    <div id="logo">
+                                            <a href="http://dev.mysql.com/" title="MySQL">
+                            <img src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/logo-mysql-110x57.png" alt="MySQL" height="57" width="110"></a>
+            </div>
+            <div id="tagline">The world's most popular open source database</div>
+
+    </div>
+
+    <div class="right">
+        
+        <div id="search_box"> <!-- Start Search -->
+        		<form id="searchform" name="searchform" method="get" action="http://search.oracle.com/search/search">
+			<input id="q" name="q" value="Search" class="swap_value" onfocus="clearSearchText();" type="text">
+			<input id="search_dest" name="group" value="Documentation" type="hidden">
+			<input src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/search_g.png" id="go" alt="Search" title="Search" type="image">
+		    </form>        </div> <!-- End Search -->
+
+                <div id="login">
+                     <p><a href="https://dev.mysql.com/auth/login/?dest=http%3a%2f%2fdev.mysql.com%2Fdoc%2Frefman%2F5.0%2Ffr%2Fbatch-commands.html">Login</a> | <a href="https://dev.mysql.com/auth/register/">Register</a></p>
+                </div>
+    </div>
+
+    </div> 
+
+    <!-- MySQL Navigation -->
+    <div id="nav_container">
+
+    <div id="flags">
+        <ul>
+            <li style="position:relative; top:-5px;">
+                <!-- Icons from http://icondock.com/free/vector-social-media-icons //-->
+                <a href="http://www.facebook.com/mysql"><img src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/facebook.png" alt="Facebook" title="Join us on Facebook" height="20" width="20"></a>&nbsp;
+                <a href="https://twitter.com/#%21/mysql"><img src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/twitter.png" alt="Twitter" title="Follow us on Twitter" height="20" width="20"></a>&nbsp;
+                <a href="http://www.youtube.com/mysqlchannel"><img src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/youtube.png" alt="YouTube" title="Visit our YouTube channel" height="20" width="20"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+                            <br>
+                        </ul>
+    </div>
+    
+                        <div id="tab_last">
+        <ul>
+            <li class="first"><a href="http://dev.mysql.com/">Developer Zone</a></li>
+            <li class="second"><a href="http://dev.mysql.com/downloads/">Downloads</a></li>
+            <li class="current"><a href="http://dev.mysql.com/doc/">Documentation</a></li>
+        </ul>
+        </div>
+            
+
+
+    <div id="mysql_menu">
+        <ul>
+	<li class="current"><a class="current " href="http://dev.mysql.com/doc/">MySQL Server</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/doc/index-enterprise.html">MySQL Enterprise</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/doc/index-gui.html">MySQL Workbench</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/doc/index-cluster.html">MySQL Cluster</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/doc/index-connectors.html">MySQL Connectors</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/doc/index-topic.html">Topic Guides</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/doc/index-expert.html">Expert Guides</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/doc/index-other.html">Other Docs</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/doc/index-archive.html">Archives</a>
+	
+		
+		
+	</li>
+	
+	<li class="link last"><a href="http://dev.mysql.com/doc/index-about.html">About</a>
+	
+		
+		
+	</li>
+	
+</ul>
+    </div>
+
+        <div id="og_sakila">&nbsp;</div>
+            <div id="og_title">&nbsp;</div>
+
+    </div>
+    <!-- End Navigation Container -->
+
+<!--/UdmComment-->
+
+<div class="page_container">
+    <div class="page_sidebar">
+	<!--UdmCommentTest-->
+
+	<div id="menu_title"></div>
+
+	<div id="menu">
+		<ul>
+			<li class="current"><a class="current subitems" href="http://dev.mysql.com/doc/index.html">Documentation Library</a>
+
+			<ul class="subitems1">
+				 <li><a href="http://dev.mysql.com/doc/refman/5.0/fr/index.html"><b>Table of Contents</b></a>
+
+
+				 <ul class="subitems2">
+				 
+				 					 		<li class="current">MySQL 5.0 Manual
+				 	
+				 	</li>
+
+				 
+				 </ul>
+
+
+
+				 </li>
+
+
+			</ul>
+
+
+			</li>
+		</ul>
+
+	 <div class="searchmanual">
+			<form action="http://search.oracle.com/search/search" method="get" id="docsearch">
+		<strong><label for="searchq">Search manual:</label></strong>
+		<br>
+		<input id="searchq" name="q" size="14" type="text">
+		<input id="searchsubmit" value="Go" type="submit">
+		<input id="searchgroup" name="group" value="MySQL" type="hidden">
+	</form>	 </div>
+
+
+	</div>
+
+	
+</div>  
+<!-- Main content -->
+
+<div id="page" class="sidebar">
+
+    
+
+
+
+
+	<!--UdmComment-->
+
+<div id="docheader"><a href="http://dev.mysql.com/doc/refman/5.0/fr/index.html"> MySQL 5.0 Reference Manual</a> :: <a href="http://dev.mysql.com/doc/refman/5.0/fr/client-side-scripts.html">8 MySQL Scripts clients et utilitaires</a> :: <a href="http://dev.mysql.com/doc/refman/5.0/fr/mysql.html">8.3 mysql, l'outil en ligne de commande</a> :: 8.3.2 Comment exécuter des commandes SQL depuis un fichier texte</div>
+
+	 
+	
+
+	
+<script language="javascript">
+
+<!--
+function toggle(what){
+ if(document.getElementById(what).style.display == "none"){
+   document.getElementById(what).style.display = "block";
+ }else{
+   document.getElementById(what).style.display = "none";
+ }
+}
+//-->
+
+</script>
+<noscript></noscript>
+
+<div style="float: right; width: 250px; margin: 0px 0px 8px 8px; background: white">
+	<div style="text-align: right; font-size: 90%; margin-bottom: 4px">
+		<div style="text-align: left;"><a style="text-decoration: none" href="http://dev.mysql.com/doc/refman/5.0/fr/mysql-commands.html" title="Previous Section">« 8.3.1 Commandes mysql</a></div>
+		<hr style="margin: 0px auto 2px auto" noshade="noshade" size="1" width="40" align="center">		<a style="text-decoration: none" href="http://dev.mysql.com/doc/refman/5.0/fr/mysql-tips.html" title="Next Section">8.3.3 Conseils avec mysql  »</a>	</div>
+	<div style="padding: 4px 0px 0px 4px; border: 2px dotted #ccc; border-right: none;">
+		<b>Section Navigation</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>[<a href="#" onclick="toggle('sectionnav');" onkeypress="if (event.keyCode == 13) { toggle('sectionnav'); }">Toggle</a>]</small>
+			<ul id="sectionnav">
+				<li class="p"><a href="http://dev.mysql.com/doc/refman/5.0/fr/mysql.html">8.3 mysql, l'outil en ligne de commande</a></li><li><a href="http://dev.mysql.com/doc/refman/5.0/fr/mysql-commands.html">8.3.1 Commandes mysql</a></li>
+<li class="self">8.3.2 Comment exécuter des commandes SQL depuis un fichier texte</li>
+<li><a href="http://dev.mysql.com/doc/refman/5.0/fr/mysql-tips.html">8.3.3 Conseils avec mysql</a></li>
+</ul>
+
+					
+	</div>
+
+</div>
+<!--/UdmComment-->
+
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="batch-commands"></a>8.3.2.&nbsp;Comment exécuter des commandes SQL depuis un fichier texte</h3></div></div></div>
+<p>
+        Le client <code class="literal">mysql</code> peut être utilisé en mode
+        interactif comme ceci&nbsp;:
+      </p>
+<pre class="programlisting">shell&gt; <strong class="userinput"><code>mysql database</code></strong>
+</pre>
+<p>
+        Toutefois, il est aussi possible de rassembler les commandes SQL
+        dans un fichier, et d'indiquer à <code class="literal">mysql</code> de
+        lire les commandes dans ce fichier. Pour faire cela, créez un
+        fichier texte <code class="filename">fichier_texte</code> qui contient
+        les commandes SQL que vous souhaitez exécuter. Puis, exécutez
+        ce fichier avec <code class="literal">mysql</code> comme ceci&nbsp;:
+      </p>
+<pre class="programlisting">shell&gt; <strong class="userinput"><code>mysql database &lt; fichier_texte</code></strong>
+</pre>
+<p>
+        Vous pouvez aussi démarrer votre fichier texte avec la commande
+        <code class="literal">USE nom_base</code>. Dans ce cas, il n'est pas
+        nécessaire de spécifier le nom de la base de données dans la
+        ligne de commande&nbsp;:
+      </p>
+<pre class="programlisting">shell&gt; <strong class="userinput"><code>mysql &lt; fichier_texte</code></strong>
+</pre>
+<p>
+        Si vous avez déjà démarré le client
+        <code class="literal">mysql</code>, vous pouvez exécuter un script SQL en
+        utilisant la commande <code class="literal">source</code>&nbsp;:
+      </p>
+<pre class="programlisting">mysql&gt; <strong class="userinput"><code>source nom_fichier;</code></strong>
+</pre>
+<p>
+        Pour plus d'informations sur le mode batch, consultez
+        <a class="xref" href="http://dev.mysql.com/doc/refman/5.0/fr/batch-mode.html" title="3.5.&nbsp;Utilisation de mysql en mode batch">Section&nbsp;3.5, «&nbsp;Utilisation de <code class="literal">mysql</code> en mode batch&nbsp;»</a>.
+      </p>
+</div><div>
+<hr>
+<p>
+      This is a translation of the MySQL Reference Manual that can be
+      found at
+      <a class="ulink" href="http://dev.mysql.com/doc/mysql/en" target="_top">dev.mysql.com</a>.
+      The original Reference Manual is in English, and this translation
+      is not necessarily as up to date as the English version.
+    </p>
+</div><div class="copyright-footer">
+    Copyright © 1997, 2010, Oracle and/or its affiliates. All
+    rights reserved.
+  <a href="http://dev.mysql.com/doc/refman/5.0/fr/index.html#legalnotice">Legal Notices</a>
+</div>
+<!--UdmComment--><div id="docnav"><a href="#">Top</a> / <a rel="prev" href="http://dev.mysql.com/doc/refman/5.0/fr/mysql-commands.html" title="8.3.1 Commandes mysql">Previous</a> / <a rel="next" href="http://dev.mysql.com/doc/refman/5.0/fr/mysql-tips.html" title="8.3.3 Conseils avec mysql">Next</a> / <a rel="up" href="http://dev.mysql.com/doc/refman/5.0/fr/mysql.html" title="8.3 mysql, l'outil en ligne de commande">Up</a> / <a rel="contents" href="http://dev.mysql.com/doc/refman/5.0/fr/index.html">Table of Contents</a></div><!--/UdmComment--></div></div>
+
+
+
+
+
+</div> <!--End Container -->
+
+
+
+
+  
+ 
+<div id="footer">
+
+    <div class="links">
+        <ul>
+            <li class="top"><a href="http://dev.mysql.com/">Developer Zone</a></li>
+	    <li><a href="http://dev.mysql.com/doc/">Documentation</a></li>
+            <li><a href="http://dev.mysql.com/articles/">Developer Articles</a></li>
+            <li><a href="http://forums.mysql.com/">Forums</a></li>
+			<li><a href="http://lists.mysql.com/">Lists</a></li>
+            <li><a href="http://bugs.mysql.com/">Bugs</a></li>
+            <li><a href="http://dev.mysql.com/worklog/">Worklog</a></li>
+			            <li><a href="http://planet.mysql.com/">Planet MySQL</a></li>
+			            <li><a href="http://labs.mysql.com/">Labs</a></li>
+        </ul>
+    </div>
+
+    <div class="links">
+        <ul>
+            <li class="top"><a href="http://dev.mysql.com/downloads/">Downloads</a></li>
+            <li><a href="http://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+            <li><a href="http://dev.mysql.com/downloads/mysql-proxy/">MySQL Proxy</a></li>
+            <li><a href="http://dev.mysql.com/downloads/cluster/">MySQL Cluster</a></li>
+            <li><a href="http://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+            <li><a href="http://dev.mysql.com/downloads/connector/">MySQL Connectors</a></li>
+            <li><a href="http://downloads.mysql.com/archives/">Archives</a></li>
+        </ul>
+    </div>
+
+    <div class="links">
+        <ul>
+            <li class="top"><a href="http://dev.mysql.com/doc/">Documentation</a></li>
+            <li><a href="http://dev.mysql.com/doc/">MySQL Reference Manuals</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-gui.html">MySQL Workbench</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-expert.html">Expert Guides</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-topic.html">Topic Guides</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-cluster.html">MySQL Cluster</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-other.html">Other Documents</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-about.html">About</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-archive.html">Archives</a></li>
+        </ul>
+    </div>
+
+
+    <div class="links">
+        <ul>
+            <li class="top"><a href="http://www.mysql.com/about/">About MySQL</a></li>
+            <li><a href="http://www.mysql.com/about/contact/">Contact Us</a></li>
+                         <li><a href="http://www.mysql.com/buy-mysql/">How to Buy</a></li>
+			<li><a href="http://www.mysql.com/partners/">Partners</a></li>
+            <li><a href="http://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+            <li><a href="http://www.mysql.com/sitemap.html">Site Map</a></li>
+	            </ul>
+	</div>
+
+	<div class="links">
+		<ul>
+			<li class="top"><a href="http://www.mysql.com/about/legal/">Legal</a></li>
+			<li><a href="http://www.mysql.com/about/legal/">Legal Policies</a></li>
+			<li><a href="http://www.oracle.com/us/legal/privacy/index.htm">Your Privacy Rights</a></li>
+			<li><a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></li>
+			<li><a href="http://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a></li>
+			<li><a href="http://www.oracle.com/technetwork/community/oca-486395.html">Contributor Agreement</a></li>
+		</ul>
+	</div>
+
+
+    <div id="search" class="en">
+	        <form id="footer_search" action="http://search.oracle.com/search/search" method="get">
+            <input id="f_q" name="q" class="swap_value" onfocus="clearSearchText();" type="text">
+	    <input name="group" value="Documentation" type="hidden">
+	    <input src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/footer_search_g.png" id="f_go" alt="Search" title="Search" type="image">
+        </form>    </div>
+
+</div><!-- End Footer -->
+		<div id="copyright-oracle"><a href="http://www.oracle.com/"><img src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/logo-oracle-red-91x22.gif" alt="Oracle" height="22" width="91"></a>&nbsp;&nbsp;<span>© 2013, Oracle Corporation and/or its affiliates</span></div>
+
+
+<script src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/s_code_remote.js"></script><script type="text/javascript" src="MySQL%20::%20MySQL%205.0%20Reference%20Manual%20::%208.3.2%20Comment%20ex%C3%A9cuter%20des%20commandes%20SQL%20depuis%20un%20fichier%20texte_files/metrics_group1.js"></script>
+
+
+</body></html>
