@@ -23,14 +23,20 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/MySQL :: MySQL 5.0 Reference Manual :: 8.3.2 Comment exécuter des commandes SQL depuis un fichier texte_files/widget118.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/MySQL :: MySQL 5.0 Reference Manual :: 8.3.2 Comment exécuter des commandes SQL depuis un fichier texte_files/youtube.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConnectJDBC.java" afterPath="$PROJECT_DIR$/src/ConnectJDBC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DAO.java" afterPath="$PROJECT_DIR$/src/DAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyTransactionDAO.java" afterPath="$PROJECT_DIR$/src/MyTransactionDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bitcoin.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ConnectJDBC.java" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384896711795" ignored="false" />
     <file path="/Dummy.txt" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384884586761" ignored="false" />
-    <file path="/fragment.java" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384884634143" ignored="false" />
+    <file path="/fragment.java" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384897437949" ignored="false" />
     <file path="/bitcoinDB.sql" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384894697864" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384896651654" ignored="false" />
+    <file path="/DAO.java" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384897316605" ignored="false" />
+    <file path="/myTransaction.java" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384897384534" ignored="false" />
+    <file path="/myTransactionDAO.java" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384898251914" ignored="false" />
+    <file path="/MyTransactionDAO.java" changelist="e5f088b9-35ca-4cae-bc68-666eabc4fd55" time="1384897779570" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +105,34 @@
       <file leaf-file-name="ConnectJDBC.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ConnectJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="54" selection-start="258" selection-end="258" vertical-scroll-proportion="-0.23259762">
+            <state line="14" column="63" selection-start="460" selection-end="460" vertical-scroll-proportion="0.24108659">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="35" selection-start="221" selection-end="513" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTransaction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyTransaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTransactionDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyTransactionDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="25" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +141,7 @@
       <file leaf-file-name="bitcoinDB.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bitcoinDB.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="83" selection-start="438" selection-end="516" vertical-scroll-proportion="0.0">
+            <state line="2" column="16" selection-start="52" selection-end="61" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,6 +166,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/bitcoinDB.sql" />
+        <option value="$PROJECT_DIR$/src/DAO.java" />
+        <option value="$PROJECT_DIR$/src/myTransaction.java" />
+        <option value="$PROJECT_DIR$/src/MyTransaction.java" />
+        <option value="$PROJECT_DIR$/src/myTransactionDAO.java" />
+        <option value="$PROJECT_DIR$/src/MyTransactionDAO.java" />
         <option value="$PROJECT_DIR$/src/ConnectJDBC.java" />
       </list>
     </option>
@@ -276,6 +314,11 @@
       <PyConsoleSettings />
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -402,31 +445,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1317" height="780" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933652" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25659472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25659472" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -491,16 +534,37 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MyTransactionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="25" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="35" selection-start="221" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bitcoinDB.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="83" selection-start="438" selection-end="516" vertical-scroll-proportion="0.0">
+        <state line="2" column="16" selection-start="52" selection-end="61" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConnectJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="258" selection-end="258" vertical-scroll-proportion="-0.23259762">
+        <state line="14" column="63" selection-start="460" selection-end="460" vertical-scroll-proportion="0.24108659">
           <folding />
         </state>
       </provider>

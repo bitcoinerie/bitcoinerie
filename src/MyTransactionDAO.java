@@ -11,8 +11,8 @@ import java.sql.Connection;
 public class MyTransactionDAO extends DAO<MyTransaction> {
     protected Connection connection = null;
 
-    public DAO(Connection connection){
-        this.connection = connection;
+    public MyTransactionDAO(Connection connection){
+        super(connection);
     }
 
     public boolean create(MyTransaction obj){
@@ -28,7 +28,7 @@ public class MyTransactionDAO extends DAO<MyTransaction> {
     }
 
     public MyTransaction find(int id){
-        return
+        return MyTransaction;
     }
 
 

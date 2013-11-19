@@ -12,7 +12,7 @@ public class ConnectJDBC {
         /* Load driver JDBC for MySQL*/
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:8080/nombdd";
+            String url = "jdbc:mysql://localhost:8080/BitcoinDB";
             String user = "bit";
             String pass = "bibit";
 
